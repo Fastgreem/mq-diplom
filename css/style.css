@@ -98,13 +98,58 @@ body {
   padding: 128px 0;
 }
 
-/*-----------------------post---------------------*/
+/* --------------- trends ------------------ */
+.trends-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative;
+  width: auto;
+}
+
+.top-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.card-link {
+  color: #ffffff;
+}
+
+.top-card {
+  display: flex;
+  align-items: flex-end;
+  width: 415px;
+  height: 320px;
+  background: #eeeeee;
+  position: relative;
+  
+}
+
+.trends-text {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #b59f5b;
+  position: relative;
+}
+
+.news-teg {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  gap: 20px;
+  position: relative;
+}
+
+/*----------------------- post ---------------------*/
 .page {
   margin-top: 60px;
 }
 
 .page-wrapper {
-  width: 1200px;
+  max-width: 1200px;
   margin: auto;
   padding: 0 15px;
   display: flex;
