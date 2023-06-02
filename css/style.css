@@ -483,3 +483,36 @@ a {
   font-size: 12px;
   text-align: center;
 }
+/*----------------------- pop up ---------------------*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  width: 60%;
+  height: 60%;
+  overflow: auto;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
