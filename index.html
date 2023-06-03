@@ -390,6 +390,7 @@
       </div>
     </div>
 <!-- ------------------ our products --------------------- -->
+<div class="bottom-wrapper">
 <div class="title-container-bottom">
   <h3 class="top">наши изделия</h3>
   </div>
@@ -448,6 +449,7 @@
   <div class="border-box"></div>
   <div class="border-box"></div>
 </div>
+</div>
 <!-- ------------------ footer --------------------- -->
     <footer class="footer">
       <div class="footer-wrapper">
@@ -478,29 +480,33 @@
       </div>
     </footer>
 <!-- ------------------ pop up ------------------- -->
-    <div class="modal">
-      <div class="modal-content">
-        <span class="close"></span>
-        <h2>Ваш фидбек</h2>
-        <form action="#">
-          <label for="frequency">Как часто вы заходите на сайт?</label>
-          <select id="frequency" name="frequency">
-            <option value="Ежедневно">Ежедневно</option>
-            <option value="Не ежедневно">Не ежедневно</option>
-            <option value="Очень редко">Очень редко</option>
-          </select>
-          <p>Вы подписаны на рассылку?</p>
-          <input type="checkbox" id="subscribe-yes" name="subscribe" value="Да">
-          <label for="subscribe-yes">Да</label>
-          <input type="checkbox" id="subscribe-no" name="subscribe" value="Нет">
-          <label for="subscribe-no">Нет</label>
-          <p>
-            Расскажите, какой контент вы хотели бы видеть на нашем сайте?
-          </p>
-          <textarea id="content" name="content" placeholder="Может, больше рецептов?"></textarea>
-          <button class="mailing-button" type="submit">Отправить</button>
-        </form>
-      </div>
+<div class="feedback-modal">
+  <span class="close">&times;</span>
+  <div class="modal-content">
+    <div class="title-modal">
+      <h3 class="top">ваш фидбек</h3>
     </div>
+    <form action="#">
+      <label for="frequency">Как часто вы заходите на сайт?</label>
+      <select id="frequency" name="frequency">
+        <option value="Ежедневно">Ежедневно</option>
+        <option value="Не ежедневно">Не ежедневно</option>
+        <option value="Очень редко">Очень редко</option>
+      </select>
+      <p>Вы подписаны на e-mail рассылку?</p>
+      <div class="subscribe-box">
+        <input type="radio" id="yes" name="subscribe-yes" value="Да">
+        <label for="yes">Да</label>
+        <input type="radio" id="no" name="subscribe-no" value="Нет">
+        <label for="no">Нет</label>
+      </div>
+      <p>
+        Расскажите, какой контент вы хотели бы видеть на нашем сайте?
+      </p>
+      <textarea id="content" name="content" placeholder="Может, больше рецептов?"></textarea>
+      <button class="mailing-button" type="submit">Отправить</button>
+    </form>
+  </div>
+</div>
   </body>
 </html>
