@@ -79,8 +79,6 @@ body {
 #menu__toggle {
   opacity: 0; /* убираем чек-бокс */
 }
-.burger-menu {
-}
 .menu__btn {
   display: flex;
   align-items: center;
@@ -582,7 +580,7 @@ a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  visibility: hidden;
+  /* visibility: hidden; */
   /* Скрываем модальное окно */
 }
 .close {
@@ -595,8 +593,8 @@ a {
   background-image: url(/svg/form-x.svg);
   background-repeat: no-repeat;
   color: #ffffff;
-  top: 325px;
-  right: 425px;
+  top: 350px;
+  right: 428px;
 }
 .modal-content {
   position: relative;
@@ -618,43 +616,63 @@ label {
   flex-direction: column;
   flex-grow: 1;
 }
-.select-container {
-  padding: 10px 0 10px 0;
-  /* background-image: url(/svg/form-arrows.svg);
-  background-repeat: no-repeat;
-  color: #ffffff; */
-}
-select {
-  background-color: #f4f7f6;
+/* стили для select */
+.frequency {
+  display: block;
+  color: #444;
+  padding: 0.6em 1.4em 0.5em 0.8em;
   width: 100%;
-  height: 30px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #f4f7f6;
+  background-image: url("/svg/form-arrows.svg");
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.7em top 50%, 0 0;
+  background-size: 0.65em auto, 100%;
   border: none;
+  cursor: pointer;
+}
+.frequency:focus {
+  border-color: #b59f5b;
+  outline: none;
 }
 /* стили для радио кнопок */
 .subscribe-box {
-  width: 50%;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: 10px 0 10px 0;
+  width: 30%;
+  height: 1.5em;
 }
-input[type="radio"] {
-  display: none;
-  cursor: pointer;
+.option {
+  margin-left: 1em;
+}
+.radio {
+  padding-left: 1.5em;
+}
+.radio__input {
   position: absolute;
-  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
-label img {
-  width: 20px;
-  height: 20px;
+.radio__box {
+  position: absolute;
+  margin-left: -1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  background-image: url(/svg/form-empty-circle.svg);
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
   cursor: pointer;
 }
-input:checked label img {
-  width: 20px;
-  height: 20px;
+.radio__input:checked + .radio__box {
   background-image: url(/svg/form-circle.svg);
+  background-size: 15px 15px;
   background-repeat: no-repeat;
-  border: 1px solid blue;
+  cursor: pointer;
 }
 /* стили для поля ввода */
 .textarea-container {
@@ -667,14 +685,13 @@ textarea {
   padding-top: 10px;
   background-color: #f4f7f6;
   border: none;
+  resize: none;
 }
 textarea::placeholder {
+  color: #444;
   padding-left: 5px;
   padding-top: 5px;
 }
-/* :focus {
-  border: 1px solid #b59f5b;
-} */
 /* стили кнопки */
 .mailing-button {
   margin-top: 18px;

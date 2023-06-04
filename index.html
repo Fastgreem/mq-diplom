@@ -505,19 +505,23 @@
     </div>
     <form action="#">
       <label for="frequency">Как часто вы заходите на сайт?</label>
-<div class="select-container">
-      <select id="frequency" name="frequency">
-        <option value="Почти каждый день">Почти каждый день</option>
-        <option value="Почти каждый день">Почти каждый день</option>
-        <option value="Почти каждый день">Почти каждый день</option>
+      <select class="frequency">
+        <option>Почти каждый день</option>
+        <option>Почти каждый день</option>
+        <option>Почти каждый день</option>
       </select>
-    </div>
       <p>Вы подписаны на e-mail рассылку?</p>
       <div class="subscribe-box">
-        <input type="radio" id="yes" name="subscribe-yes" value="Да">
-        <label for="yes"><img src="/svg/form-empty-circle.svg">Да</label>
-        <input type="radio" id="no" name="subscribe-no" value="Нет">
-        <label for="no"><img src="/svg/form-empty-circle.svg">Нет</label>
+        <label class="radio option">
+          <input class="radio__input" type="radio"> 
+        <span class="radio__box"></span>
+          Да
+        </label>
+        <label class="radio option">
+          <input class="radio__input" type="radio"> 
+          <span class="radio__box"></span>
+          Нет
+        </label>
       </div>
       <p>
         Расскажите, какой контент вы хотели бы видеть на нашем сайте?
