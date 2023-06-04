@@ -10,6 +10,7 @@
   <body>
     <header class="header">
       <div class="header-wrapper">
+<!-- --------- menu --------- -->
         <div class="menu">
           <a class="logo-link" href="#">
             <img src="/svg/noemi-logo.svg" class="header-logo" alt="логотип ноэми" width="170"> </a>
@@ -36,6 +37,22 @@
             </ul>
           </nav>
         </div>
+<!-- --------- burger --------- -->
+<div class="burger-menu">
+  <input id="menu__toggle" type="checkbox">
+  <label for="menu__toggle" class="menu__btn">
+    <span></span>
+  </label>
+<ul class="menu__list">
+  <li><a href="#" class="menu__item">главная</a></li>
+  <li><a href="#" class="menu__item">посты</a></li>
+  <li><a href="#" class="menu__item">статьи</a></li>
+  <li><a href="#" class="menu__item">теги</a></li>
+  <li><a href="#" class="menu__item">темы</a></li>
+  <li><a href="#" class="menu__item">контакты</a></li>  
+</ul>
+</div>
+<!-- --------- welcome title --------- -->
         <h1 class="welcome-title">блог о творчестве, спорте, и образе жизни</h1>
       </div> 
     </header>
@@ -481,29 +498,33 @@
     </footer>
 <!-- ------------------ pop up ------------------- -->
 <div class="feedback-modal">
-  <span class="close">&times;</span>
+  <span class="close"></span>
   <div class="modal-content">
     <div class="title-modal">
       <h3 class="top">ваш фидбек</h3>
     </div>
     <form action="#">
       <label for="frequency">Как часто вы заходите на сайт?</label>
+<div class="select-container">
       <select id="frequency" name="frequency">
-        <option value="Ежедневно">Ежедневно</option>
-        <option value="Не ежедневно">Не ежедневно</option>
-        <option value="Очень редко">Очень редко</option>
+        <option value="Почти каждый день">Почти каждый день</option>
+        <option value="Почти каждый день">Почти каждый день</option>
+        <option value="Почти каждый день">Почти каждый день</option>
       </select>
+    </div>
       <p>Вы подписаны на e-mail рассылку?</p>
       <div class="subscribe-box">
         <input type="radio" id="yes" name="subscribe-yes" value="Да">
-        <label for="yes">Да</label>
+        <label for="yes"><img src="/svg/form-empty-circle.svg">Да</label>
         <input type="radio" id="no" name="subscribe-no" value="Нет">
-        <label for="no">Нет</label>
+        <label for="no"><img src="/svg/form-empty-circle.svg">Нет</label>
       </div>
       <p>
         Расскажите, какой контент вы хотели бы видеть на нашем сайте?
       </p>
+      <div class="textarea-container">
       <textarea id="content" name="content" placeholder="Может, больше рецептов?"></textarea>
+    </div>
       <button class="mailing-button" type="submit">Отправить</button>
     </form>
   </div>
