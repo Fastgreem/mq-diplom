@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Open Sans";
-  src: url("fonts/OpenSans-Regular.woff");
+  src: url("../fonts/OpenSans-Regular.woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("fonts/OpenSans-Bold.woff");
+  src: url("../fonts/OpenSans-Bold.woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -30,7 +30,7 @@ body {
 }
 .header {
   padding: 28px 248px 124px;
-  background-image: url("/images/banner-bg.jpg");
+  background-image: url("../images/banner-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -349,7 +349,7 @@ a {
 .search-button {
   border: none;
   width: 47px;
-  background-image: url(svg/search.svg);
+  background-image: url(../svg/search.svg);
   background-repeat: no-repeat;
   background-size: 16px;
   background-position: center;
@@ -552,13 +552,13 @@ a {
   margin-left: 32px;
 }
 .social-icon_dribble {
-  background-image: url(svg/001-dribbble.svg);
+  background-image: url(../svg/001-dribbble.svg);
 }
 .social-icon_pinterest {
-  background-image: url(svg/002-pinterest.svg);
+  background-image: url(../svg/002-pinterest.svg);
 }
 .social-icon_tumblr {
-  background-image: url(svg/003-tumblr.svg);
+  background-image: url(../svg/003-tumblr.svg);
 }
 /*----------------------- copyrite ---------------------*/
 .copyright {
@@ -590,7 +590,7 @@ a {
   color: #ffffff;
   cursor: pointer;
   position: absolute;
-  background-image: url(svg/form-x.svg);
+  background-image: url(../svg/form-x.svg);
   background-repeat: no-repeat;
   color: #ffffff;
   top: 350px;
@@ -629,7 +629,7 @@ label {
   -webkit-appearance: none;
   appearance: none;
   background-color: #f4f7f6;
-  background-image: url("svg/form-arrows.svg");
+  background-image: url("../svg/form-arrows.svg");
   background-repeat: no-repeat, repeat;
   background-position: right 0.7em top 50%, 0 0;
   background-size: 0.65em auto, 100%;
@@ -663,13 +663,13 @@ label {
   margin-left: -1.5em;
   width: 1.5em;
   height: 1.5em;
-  background-image: url(svg/form-empty-circle.svg);
+  background-image: url(../svg/form-empty-circle.svg);
   background-size: 15px 15px;
   background-repeat: no-repeat;
   cursor: pointer;
 }
 .radio__input:checked + .radio__box {
-  background-image: url(svg/form-circle.svg);
+  background-image: url(../svg/form-circle.svg);
   background-size: 15px 15px;
   background-repeat: no-repeat;
   cursor: pointer;
