@@ -75,7 +75,8 @@ body {
 }
 
 .header-title {
-  width: 679px;
+  /* display: none; */
+  width: 679px; 
   margin: 0 auto;
   padding-top: 125px;
   font-size: 45px;

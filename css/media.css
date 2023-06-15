@@ -243,7 +243,8 @@
   }
 
   .header-title {
-    width: 280px;
+    width: 100%;
+    /* width: 280px;     из-за фиксированной ширины переполняется блок */ 
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 219px;
