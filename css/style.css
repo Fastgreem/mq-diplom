@@ -92,6 +92,7 @@ body {
   line-height: 75px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 24px;
 }
 
 .header-row {
@@ -111,7 +112,8 @@ body {
 }
 
 .nav-item {
-  padding-right: 25px;
+  padding-right: 35px;
+  margin-top: -4px;
 }
 
 .nav-item:last-child {
@@ -149,13 +151,13 @@ body {
   background-color: #b59f5b;
   opacity: 0.4;
   margin: 0 auto;
-  margin-top: 11px;
-  margin-bottom: 21px;
+  margin-top: 13px;
+  margin-bottom: 45px;
 }
 
 /* ---------- trends ---------- */
 .trends {
-  margin-bottom: 79px;
+  margin-bottom: 39px;
 }
 
 .trends-wrapper {
@@ -310,7 +312,7 @@ body {
 
 /* ------------ main ---------------- */
 .main-styles {
-  width: 54%;
+  width: 52%;
 }
 
 .post-anonse {
@@ -421,7 +423,7 @@ body {
 
 /* ------------ asside ---------------- */
 .sidebar {
-  width: 19%;
+  width: 23%;
 }
 
 .sidebar section {
@@ -805,7 +807,7 @@ input::placeholder {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 101;
+  z-index: 9999;
 }
 
 .popup-form::before {
@@ -989,6 +991,7 @@ textarea:focus {
     background-image: url(../images/banner-bg-tablet.jpg);
     padding: 0 35px;
     margin-bottom: 46px;
+    height: 391px;
   }
 
   .wrapper {
@@ -998,8 +1001,10 @@ textarea:focus {
   }
 
   .header-title {
-    width: 63%;
+    width: 90%;
     font-size: 40px;
+    margin-top: -36px;
+    line-height: normal;
   }
 
   .burger-line {
@@ -1046,34 +1051,34 @@ textarea:focus {
     flex-direction: column;
     width: 100%;
     border-bottom: 3px solid #eeeeee;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
 
   .article-styles {
-    margin-top: 15px;
+    margin-top: 12px;
     margin-left: 0;
     width: 100%;
   }
   .post-anonse img {
     width: 100%;
+    height: 304px;
   }
   .sidebar {
-    width: 31%;
+    width: 39%;
   }
   .trends {
-    margin-bottom: 42px;
+    margin-bottom: 48px;
   }
   .post-box {
     min-width: 100%;
     width: 100%;
   }
   .article-new-post {
-    margin-left: 20px;
     width: 78%;
   }
   .footer-post-anonse {
-    gap: 15px;
-    margin-bottom: 36px;
+    gap: 11px;
+    margin-bottom: 26px;
   }
   .products-list {
     justify-content: flex-start;
@@ -1087,8 +1092,29 @@ textarea:focus {
     margin-top: 28px;
   }
 
+  .section-title::after {
+    margin-top: 8px;
+  }
+
   .search-group {
     width: 100%;
+  }
+
+  .text {
+    padding-bottom: 15px;
+  }
+
+  .new-post {
+    margin-bottom: 19px;
+  }
+
+  .sidebar section {
+    margin-bottom: 55px;
+  }
+
+  .article-post-anonse {
+    gap: 0px;
+    margin-bottom: 29px;
   }
 
   .search-input {
@@ -1099,6 +1125,14 @@ textarea:focus {
     width: 25%;
   }
 
+  .tags-item {
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+  .tags-item-link {
+    margin-left: 9px;
+    margin-top: 4px;
+  }
   .mailing-input {
     box-sizing: border-box;
     width: 100%;
@@ -1141,31 +1175,60 @@ textarea:focus {
   }
   .trends-wrapper {
     gap: 5px;
-}
+  }
+  .section-title-top {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .trends-item-heading h2 {
+    padding-top: 0px;
+    margin-top: -10px;
+  }
+  .section-title-top::after {
+    margin-bottom: 15px;   
+  }
+
+  .trends-item-heading {
+    padding: 33px 28px 27px 30px;
+  }
+
+  .trends-skin {
+    padding: 0 18px 1em 18px;
+    height: 244px;
+  }
+
+  .article-title a {
+    font-size: 17px;
+    margin-top: 6px;
+  }
 }
 
 @media (max-width: 1200px) and (orientation: landscape) {
   .trends-item {
-    width: 49.75%;
+    width: 49.6%;
   }
   .trends-item-one,
   .trends-item-two {
     margin-bottom: 0;
   }
+  .section-title-top::after {
+    margin-top: 13px;
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 900px) and (orientation: landscape) {
   .trends-item-heading {
-    padding: 0.5em;
+    padding: 2em;
   }
   .trends-skin {
-    padding: 29% 1em 1em 1em;
+    padding: 23% 1em 1em 1em;
   }
   .tags-anonse-item a {
     font-size: 14px;
   }
   .article-title a {
-    font-size: 14px;
+    font-size: 17px;
   }
 }
 
@@ -1175,6 +1238,11 @@ textarea:focus {
     background-image: url(../images/banner-mobile.jpg);
     margin-bottom: 40px;
     padding: 0 15px;
+    height: 639px;
+  }
+
+  .trends-item-heading {
+    padding: 45px 24px 27px 18px;
   }
 
   .wrapper {
@@ -1184,7 +1252,8 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
+    padding-top: 203px;
+}
 
   .header-row {
     display: flex;
@@ -1208,11 +1277,11 @@ textarea:focus {
   .header-title {
     width: 100%;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 24px;
     font-size: 26px;
     line-height: 1.385;
     height: auto;
-  }
+}
 
   .trends-wrapper {
     gap: 3px;
@@ -1233,6 +1302,7 @@ textarea:focus {
 
   .trends-skin {
     padding: 29% 15px 1em 15px;
+    height: 231px;
   }
 
   .trends-item {
@@ -1251,7 +1321,9 @@ textarea:focus {
   }
 
   .article-title a {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 17px;
+    margin-top: 11px;
   }
 
   .text {
@@ -1288,9 +1360,12 @@ textarea:focus {
   .mailing-button {
     width: 100%;
   }
-
+  .article-post-anonse {
+    gap: 0px;
+    margin-bottom: 19px;
+  }
   .footer-post-anonse {
-    margin: 20px 0 18px;
+    margin: 20px 0 11px;
   }
 
   .post-anonse {
@@ -1299,10 +1374,12 @@ textarea:focus {
 
   .post-anonse img {
     width: 100%;
+    height: 255px;
   }
 
   .article-styles {
     width: 100%;
+    margin-top: 8px;
   }
 
   .new-post {
