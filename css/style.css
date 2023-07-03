@@ -796,7 +796,6 @@ input::placeholder {
 
 /* ------------ modal ---------------- */
 .cover-popup {
-  visibility: hidden;
   display: flex;
   align-items: center;
   text-align: left;
@@ -808,6 +807,10 @@ input::placeholder {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
+}
+
+._hidden {
+  display: none;
 }
 
 .popup-form::before {
